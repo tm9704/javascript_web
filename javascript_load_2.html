@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" id="hw" value="Hello world" />
+    <!-- script태그가 나오는 순간 자바스크리트로 해석 닫히는 태그에서 끝 -->
+    <script>
+        var hw = document.getElementById('hw');
+        hw.addEventListener('click', function(){
+            alert('Hello world');
+        })
+    </script>
+</body>
+</html>

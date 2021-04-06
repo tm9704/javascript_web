@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- script 태그가 헤드에 있음 but 바디의 끝부분에 있는게 좋음 -->
+    <script src="./javascript/load_3.js"></script>
+    <!-- 위 코드는 아래코드와 정확히 일치 다른 곳에 빼둔 것 뿐이다.
+        그러나 위코드나, 아래코드는 에러 발생 해결하기 위해서는 window.onload = function(){}로 감싸줘야한다. => 웹페이지가 다 다운로드 되고 웹페이지가 로드가 끝났을 때 onload가 실행됨.
+        <script>
+        var hw = document.getElementById('hw');
+        hw.addEventListener('click', function(){
+            alert('Hello world');
+        })
+    </script>
+    -->
+</head>
+<body>
+    <input type="button" id="hw" value="Hello world" />
+</body>
+</html>
