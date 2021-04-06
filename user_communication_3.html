@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <input type="button" value="prompt" onclick="func_prompt()" />
+        <script>
+            //prompt는 사용자가 입력한 값을 받아서 자바스크립트가 얻어낼 수 있는 기능.
+            //텍스트 박스가 생김.
+            function func_prompt(){
+                //첫번째 인자는 출력되는 값.
+                if(prompt('id?') === 'egoing'){
+                    alert('welcome');
+                } else {
+                    alert('fail');
+                }
+            }
+        </script>
+    </body>
+</html>
