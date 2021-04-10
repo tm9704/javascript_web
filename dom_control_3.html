@@ -1,0 +1,15 @@
+<!--id값을 기준으로 객체를 조회, 성능면에서 가장 우수.-->
+<!DOCTYPE html>
+<html>
+<body>
+<ul>
+    <li>HTML</li>
+    <li id="active">CSS</li>
+    <li>JavaScript</li>
+</ul>
+<script>
+    var li = document.getElementById('active');
+    li.style.color='red';
+</script>
+</body>
+</html>
