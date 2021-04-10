@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //location 객체는 url을 알아내거나 바꿀 수 있다.
+        console.log(location.toString(), location.href);
+        //위의 두개 다 같은 역할, href를 쓰는게 좀 더 바람직하다.
+        alert(location)
+        //console.log같은 경우 해당 객체가 가지고 있는 프로퍼티들을 콘솔 로그가 내부적으로 분석해서 우리에게 보여줌, 객체의 정보를 출력.
+        //alert는 인자로 들어오는 값이 문자열이여야하기 때문에 자바스크립트가 객체를 문자화 시킴.
+
+        console.log(location.protocol, location.host, location.port, location.pathname, location.search, location.hash)
+        //protocol => https:가 출력됨. 즉 해당 문서의 프로토콜을 알아냄.
+        //host => 컴퓨터, 서비스의 식별하는 주소를 알아냄
+        //port => 소프트웨어들을 식별하는 port주소를 알아냄
+        //pathname => 웹서버에 접속 했을 때 그 웹 서버가 가지고 있는 정보중에 구체적을 정보를 요청
+        //search => ?뒤의 값들을 알아냄
+        //hash => 북마크(#~~~)을 알아냄.
+    </script>
+</body>
+</html>
